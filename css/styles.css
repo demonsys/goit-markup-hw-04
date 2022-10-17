@@ -210,19 +210,16 @@ ul {
   margin-right: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
-.benefits-list .item::before {
+.benefits-icon {
   display: block;
-  content: '';
   height: 120px;
   padding: 25px 100px;
   background-color: var(--secondary-bcg-color);
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 30px;
 }
 
-.icon-antenna::before {
-  background-image: url('../images/icons.svg#icon-antenna1');
-}
 .benefits-list .item:last-child {
   margin-right: 0;
 }
@@ -385,10 +382,14 @@ address .contacts {
 }
 .page-footer-contacts {
   display: block;
+  margin-right: 70px;
 }
 .page-footer-soc-block {
-  margin-left: 70px;
   display: block;
+}
+.footer-div {
+  display: flex;
+  align-items: baseline;
 }
 .soc-links-title {
   font-style: normal;
@@ -397,13 +398,11 @@ address .contacts {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-light-color);
-  align-items: baseline;
+  margin-bottom: 20px;
 }
 .page-footer .soc-list {
   display: flex;
-  justify-content: center;
   gap: 10px;
-  align-items: baseline;
 }
 .page-footer .soc-link {
   width: 44px;
