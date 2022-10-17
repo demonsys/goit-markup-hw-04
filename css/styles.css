@@ -211,13 +211,13 @@ ul {
   flex-basis: calc((100% - 90px) / 4);
 }
 .benefits-icon {
-  display: block;
+  display: flex;
   height: 120px;
-  padding: 25px 100px;
   background-color: var(--secondary-bcg-color);
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 4px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefits-list .item:last-child {
@@ -314,7 +314,8 @@ ul {
 .soc-icon {
   fill: currentColor;
 }
-.soc-link:hover {
+.soc-link:hover,
+.soc-link:focus {
   background-color: var(--accent-color);
   color: var(--main-light-color);
 }
@@ -338,11 +339,14 @@ ul {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 .clients-icon {
   fill: currentColor;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -417,7 +421,8 @@ address .contacts {
 .page-footer .soc-icon {
   fill: currentColor;
 }
-.page-footer .soc-link:hover {
+.page-footer .soc-link:hover,
+.page-footer .soc-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -471,7 +476,8 @@ address .contacts {
   background: #ffffff;
   color: var(--primary-text-color);
 }
-.projects-link:hover {
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
